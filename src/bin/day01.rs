@@ -5,7 +5,6 @@ use std::path::Path;
 
 fn main() -> io::Result<()> {
     let path = Path::new("input/01.txt");
-    println!("Reading input file: {:?}", path);
     let file = File::open(path)?;
     let reader = io::BufReader::new(file);
 
